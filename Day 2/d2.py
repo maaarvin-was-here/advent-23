@@ -1,4 +1,4 @@
-with open('d2.txt', 'r') as file:
+with open('d2_input.txt', 'r') as file:
     input_lines = [line.strip() for line in file]
 
 sum = 0
