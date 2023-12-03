@@ -20,6 +20,7 @@ map = {
 for line in input_lines:
     valid = True
     inputs = line.split(": ")
+    # get game id as an integer
     game_id = int(inputs[0].split(" ")[1])
 
     draws = inputs[1].split("; ")

@@ -3,6 +3,9 @@
 with open('d1_input.txt', 'r') as file:
     input_lines = [line.strip() for line in file]
 
+
+## Part 1
+
 sum = 0
 spelled = {
     'one' : "1",
@@ -30,10 +33,13 @@ for line in input_lines:
 print(sum)
 
 
+## Part 2
+
 sum = 0
 for line in input_lines:
     for word in spelled.keys():
         while word in line:
+            # Replace word number with value
             index = line.index(word)
             line = line[0:index + 1] + spelled[word] + line[index + 2:]
 
