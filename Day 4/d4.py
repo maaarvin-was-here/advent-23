@@ -35,3 +35,8 @@ for line in input_lines:
         sol += points
 
 print(int(sol))
+
+
+## Part 2
+
+win_map = {}
