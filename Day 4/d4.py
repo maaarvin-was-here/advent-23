@@ -79,8 +79,8 @@ for line in input_lines:
 
 for i, num in enumerate(card_count):
     sol += num
-    for j in range(1, win_map[num] + 1):
+    for j in range(1, win_map[i + 1] + 1):
         if i+j < len(card_count):
-            card_count[i+j] += 1
+            card_count[i+j] += num
 
 print(sol)
