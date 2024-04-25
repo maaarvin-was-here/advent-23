@@ -16,4 +16,3 @@ for line in input_lines:
     print(value_array)
 
     for num in value_array:
-    
